@@ -1,10 +1,10 @@
 <script>
   export let title, intro, blog, source, content, allContent;
-  /* import Gallery from "svelte-image-gallery";
+  import Gallery from "../components/gallery.svelte";
 
   function handleClick(e) {
     console.log(e);
-  } */
+  }
 
   import Grid from "../components/grid.svelte";
   import Uses from "../components/source.svelte";
@@ -21,7 +21,7 @@
 
 <h1>{title}</h1>
 
-<!-- <Gallery on:click={handleClick}>
+<Gallery on:click={handleClick}>
   <img src="https://via.placeholder.com/180x200/1" alt="" />
   <img src="https://via.placeholder.com/200x280/1" alt="" />
   <img src="https://via.placeholder.com/250x200/1" alt="" />
@@ -52,7 +52,7 @@
   <img src="https://via.placeholder.com/210x210/1" alt="" />
   <img src="https://via.placeholder.com/200x220/1" alt="" />
   <img src="https://via.placeholder.com/210x200/1" alt="" />
-</Gallery> -->
+</Gallery>
 
 <section id="intro">
   {#each intro as paragraph}
